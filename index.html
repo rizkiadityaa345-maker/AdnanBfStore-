@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdnanBfStore</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050816;
+color:white;
+}
+
+header{
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(135deg,#00c3ff,#0044ff);
+box-shadow:0 0 25px cyan;
+}
+
+header h1{
+font-size:42px;
+text-shadow:0 0 20px cyan;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+}
+
+.section{
+padding:25px 15px;
+}
+
+.title{
+text-align:center;
+color:cyan;
+margin-bottom:20px;
+}
+
+select{
+width:100%;
+padding:15px;
+background:#111827;
+color:white;
+border:1px solid cyan;
+border-radius:10px;
+font-size:16px;
+}
+
+.btn{
+width:100%;
+padding:15px;
+margin-top:15px;
+background:cyan;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.btn:hover{
+box-shadow:0 0 20px cyan;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.stat{
+background:#111827;
+border:1px solid cyan;
+padding:15px;
+border-radius:10px;
+text-align:center;
+min-width:120px;
+}
+
+.testi{
+background:#111827;
+border-left:4px solid cyan;
+padding:15px;
+margin-top:10px;
+border-radius:10px;
+}
+
+.wa{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>ADNANBFSTORE</h1>
+<p>🎮 Joki Blox Fruits Terpercaya 🎮</p>
+<p>⭐⭐⭐⭐⭐ Trusted Store</p>
+</header>
+
+<div class="section">
+<h2 class="title">📋 Pilih Layanan</h2>
+
+<select id="layanan">
+
+<optgroup label="LEVEL">
+<option>100 Level Sea 1 - 6K</option>
+<option>100 Level Sea 2/Sea 3 - 5K</option>
+</optgroup>
+
+<optgroup label="MASTERY">
+<option>100 Mastery Melee - 5K</option>
+<option>100 Mastery Sword - 5K</option>
+<option>100 Mastery Gun - 6K</option>
+<option>100 Mastery Fruit - 5K</option>
+</optgroup>
+
+<optgroup label="KILL BOSS">
+<option>Kill Rip Indra - 15K</option>
+<option>Kill Dough King - 15K</option>
+<option>Kill Darkbeard - 15K</option>
+<option>Kill Soul Reaper - 8K</option>
+</optgroup>
+
+<optgroup label="RAID">
+<option>Raid Biasa - 2K</option>
+<option>Raid Buddha - 3K</option>
+<option>Raid Dough - 3K</option>
+</optgroup>
+
+<optgroup label="GET SWORD">
+<option>Yama - 13K</option>
+<option>Tushita - 15K</option>
+<option>CDK - 45K</option>
+<option>TTK - 15K</option>
+</optgroup>
+
+<optgroup label="GET GUN">
+<option>Kabutcha - 3K</option>
+<option>Dragon Storm - 20K</option>
+<option>Skull Guitar - 10K</option>
+</optgroup>
+
+<optgroup label="GET RACE">
+<option>Race Ghoul - 20K</option>
+<option>Race Cyborg - 25K</option>
+<option>Race Draco - 10K</option>
+</optgroup>
+
+<optgroup label="ISLAND">
+<option>Mirage Island - 8K</option>
+<option>Kitsune Island - 10K</option>
+<option>Prehistoric Island - 10K</option>
+</optgroup>
+
+</select>
+
+<button class="btn" onclick="orderWA()">
+ORDER SEKARANG
+</button>
+</div>
+
+<div class="section">
+<h2 class="title">📊 Statistik</h2>
+
+<div class="stats">
+<div class="stat">
+<h3>500+</h3>
+<p>Order</p>
+</div>
+
+<div class="stat">
+<h3>300+</h3>
+<p>Customer</p>
+</div>
+
+<div class="stat">
+<h3>4.9⭐</h3>
+<p>Rating</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2 class="title">⭐ Testimoni</h2>
+
+<div class="testi">
+⭐⭐⭐⭐⭐ Pelayanan cepat dan aman.
+</div>
+
+<div class="testi">
+⭐⭐⭐⭐⭐ Admin ramah dan terpercaya.
+</div>
+
+<div class="testi">
+⭐⭐⭐⭐⭐ Recommended banget.
+</div>
+
+</div>
+
+<a class="wa" href="https://wa.me/6285831739155">
+WhatsApp
+</a>
+
+<footer>
+© 2026 AdnanBfStore
+</footer>
+
+<script>
+function orderWA(){
+let layanan=document.getElementById("layanan").value;
+
+let url=
+"https://wa.me/6285831739155?text=" +
+encodeURIComponent(
+"Halo AdnanBfStore, saya ingin order " + layanan
+);
+
+window.location.href=url;
+}
+</script>
+
+</body>
+</html>
